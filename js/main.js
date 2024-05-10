@@ -165,8 +165,10 @@ E(document).ready(function () {
     var html = editorHTML.getValue(),
       js = editorJS.getValue();
 
+    var transformedJs = Babel.transform(js, { presets: ['es2015', 'react'] }).code;
+
     preview.open();
-    preview.write(html + "<script type='text/babel'>" + js + "</script>");
+    preview.write(html + "<script>" + transformedJs + "</script>");
     preview.close();
   }
 
