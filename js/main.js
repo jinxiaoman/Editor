@@ -166,7 +166,7 @@ E(document).ready(function () {
       js = editorJS.getValue();
 
     preview.open();
-    preview.write(html + "<script>" + js + "</script>");
+    preview.write(html + "<script type='text/babel'>" + js + "</script>");
     preview.close();
   }
 
