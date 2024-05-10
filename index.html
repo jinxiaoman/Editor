@@ -119,17 +119,18 @@
 <script defer src="https://cdn.jsdelivr.net/npm/file-saver@latest/dist/FileSaver.min.js"></script>
 
 <!--font awesome-->
-<script src="https://kit.fontawesome.com/b4c06aa200.js" crossorigin="anonymous"></script>
+<script src="./js/kit-fontawesome.js" crossorigin="anonymous"></script>
 </head>
 
 <!--google analytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZCFK3S9S1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZCFK3S9S1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-EZCFK3S9S1');
-</script>
+</script> -->
+
 
 <body>
 <!--loading indicator-->
@@ -140,7 +141,8 @@
 <main id="wrapper">
     <section id="utils">
         <div class="logo">
-            <a href="https://github.com/markhillard/Editor" title="Editor on GitHub">E</a>
+            <!-- <a href="https://github.com/markhillard/Editor" title="Editor on GitHub">E</a> -->
+            <a href="">Code</a>
         </div>
         <div class="code-swap">
             <span class="toggle-view">view<span class="fa-solid fa-fw fa-chevron-down"></span></span>
@@ -169,7 +171,10 @@
             <span class="clear-editor">clear<span class="fa-solid fa-fw fa-eraser"></span></span>
             <span class="run-script">run<span class="fa-solid fa-fw fa-bolt"></span></span>
             <span class="save">save<span class="fa-solid fa-fw fa-file-download"></span></span>
+            <span class="import-html">upload<span class="fa-solid fa-upload"></span></span>
         </div>
+        <!-- file-input 隐藏节点 -->
+        <input type="file" class="file-input" style="display: none;">
         <div class="cdnjs-search">
             <input class="query" type="text" placeholder="cdnjs...">
         </div>
@@ -195,6 +200,6 @@
 <!--end wrapper-->
 
 <!-- main -->
-<script src="./js/main.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
